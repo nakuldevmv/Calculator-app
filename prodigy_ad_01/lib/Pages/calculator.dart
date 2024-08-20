@@ -24,7 +24,7 @@ class calculator extends StatelessWidget {
     final containerHeight = screenHeight / ratioh;
 
     final ratioh2 =
-        screenHeight > 592.0 ? screenHeight / 508 : screenHeight / 386;
+        screenHeight > 592.0 ? screenHeight / 486 : screenHeight / 386;
 
     final containerHeight2 = screenHeight / ratioh2;
 
@@ -734,7 +734,7 @@ class calculator extends StatelessWidget {
                 ),
                 Container(
                   padding: screenHeight > 592
-                      ? const EdgeInsets.only(bottom: 20)
+                      ? const EdgeInsets.only(bottom: 10)
                       : const EdgeInsets.only(bottom: 5),
                   child: SmoothPageIndicator(
                     controller: ctrlPG,
