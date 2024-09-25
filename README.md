@@ -1,4 +1,4 @@
-# prodigy_ad_01
+# Calculator App
 
 A new Flutter project.
 
