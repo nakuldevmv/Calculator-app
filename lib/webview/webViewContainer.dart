@@ -16,8 +16,8 @@ class WebView extends StatelessWidget {
   const WebView({
     super.key,
     this.child,
-    this.innerContainerHeight = 866,
-    this.innerContainerWidth = 411,
+    this.innerContainerHeight = 800,
+    this.innerContainerWidth = 400,
     this.shadowColor = Colors.black54,
     this.shadowBlurRadius = 10.0,
     this.shadowSpreadRadius = 2.0,
@@ -67,10 +67,30 @@ class WebView extends StatelessWidget {
                 ),
               ],
             ),
-            child: child,
+            child: ClipRRect(child: child),
           ),
         ),
       ),
+    );
+  }
+}
+
+class ZoomedWidget extends StatelessWidget {
+  final Widget child;
+  final double scale;
+
+  const ZoomedWidget({
+    super.key,
+    required this.child,
+    this.scale = 0.73, // Default scale is 80%.
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Transform.scale(
+      scale: scale, // Apply zoom (scaling) effect.
+      alignment: Alignment.center, // Align from the top-left corner.
+      child: child,
     );
   }
 }

@@ -9,20 +9,20 @@ class CustomContainerBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
-    final ratioh = screenHeight > 592.0 ? screenHeight / 80 : screenHeight / 60;
-    final ratiow = screenWidth > 360.0 ? screenWidth / 265 : screenWidth / 230;
+    // final screenWidth = 411.42857142857144;
+    // final screenHeight = 843.4285714285714;
+    const screenWidth = 411.42857142857144;
+    const screenHeight = 843.4285714285714;
+    const ratioh = screenHeight > 592.0 ? screenHeight / 80 : screenHeight / 60;
+    const ratiow = screenWidth > 360.0 ? screenWidth / 265 : screenWidth / 230;
 
-    final buttonWidth = screenWidth / ratiow;
-    final buttonHeight = screenHeight / ratioh;
+    const buttonWidth = screenWidth / ratiow;
+    const buttonHeight = screenHeight / ratioh;
     return Container(
       margin: const EdgeInsets.only(top: 21, left: 22),
       width: buttonWidth,
       height: buttonHeight,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(25),
-          color: const Color.fromARGB(75, 0, 0, 0)
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(25), color: const Color.fromARGB(75, 0, 0, 0)
           // gradient: const LinearGradient(
           //   begin: Alignment.topLeft,
           //   end: Alignment.bottomRight,
@@ -58,23 +58,20 @@ class CustomContainerBox2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
-    final ratioh =
-        screenHeight > 592.0 ? screenHeight / 440 : screenHeight / 325;
-    final ratiow = screenWidth > 360.0 ? screenWidth / 80 : screenWidth / 60;
+    const screenWidth = 411.42857142857144;
+    const screenHeight = 843.4285714285714;
+    const ratioh = screenHeight > 592.0 ? screenHeight / 440 : screenHeight / 325;
+    const ratiow = screenWidth > 360.0 ? screenWidth / 80 : screenWidth / 60;
 
-    final buttonWidth = screenWidth / ratiow;
-    final buttonHeight = screenHeight / ratioh;
+    const buttonWidth = screenWidth / ratiow;
+    const buttonHeight = screenHeight / ratioh;
     return Container(
       margin: const EdgeInsets.only(top: 21, left: 22),
       width: buttonWidth,
       height: buttonHeight,
       alignment: Alignment.center,
       transformAlignment: Alignment.center,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(25),
-          color: const Color.fromARGB(75, 0, 0, 0)),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(25), color: const Color.fromARGB(75, 0, 0, 0)),
       child: child,
     );
   }
@@ -106,17 +103,17 @@ class CustomContainerBox2 extends StatelessWidget {
 
 class ElevatedButtonStyle {
   static ButtonStyle btnstyle(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
+    const screenWidth = 411.42857142857144;
+    const screenHeight = 843.4285714285714;
 
-    final ratioh = screenHeight > 592.0 ? screenHeight / 70 : screenHeight / 60;
-    final ratiow = screenWidth > 360.0 ? screenWidth / 70 : screenWidth / 60;
+    const ratioh = screenHeight > 592.0 ? screenHeight / 70 : screenHeight / 60;
+    const ratiow = screenWidth > 360.0 ? screenWidth / 70 : screenWidth / 60;
 
-    final buttonWidth = screenWidth / ratiow;
-    final buttonHeight = screenHeight / ratioh;
+    const buttonWidth = screenWidth / ratiow;
+    const buttonHeight = screenHeight / ratioh;
 
     return ElevatedButton.styleFrom(
-      minimumSize: Size(buttonWidth, buttonHeight),
+      minimumSize: const Size(buttonWidth, buttonHeight),
       backgroundColor: const Color.fromARGB(127, 1, 5, 7),
       foregroundColor: Colors.black,
       shape: RoundedRectangleBorder(
@@ -126,17 +123,17 @@ class ElevatedButtonStyle {
   }
 
   static ButtonStyle btnstyle0(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
+    const screenWidth = 411.42857142857144;
+    const screenHeight = 843.4285714285714;
 
-    final ratioh = screenHeight > 592.0 ? screenHeight / 70 : screenHeight / 60;
-    final ratiow = screenWidth > 360.0 ? screenWidth / 170 : screenWidth / 147;
+    const ratioh = screenHeight > 592.0 ? screenHeight / 70 : screenHeight / 60;
+    const ratiow = screenWidth > 360.0 ? screenWidth / 170 : screenWidth / 147;
 
-    final buttonWidth = screenWidth / ratiow;
-    final buttonHeight = screenHeight / ratioh;
+    const buttonWidth = screenWidth / ratiow;
+    const buttonHeight = screenHeight / ratioh;
 
     return ElevatedButton.styleFrom(
-      minimumSize: Size(buttonWidth, buttonHeight),
+      minimumSize: const Size(buttonWidth, buttonHeight),
       backgroundColor: const Color.fromARGB(127, 1, 5, 7),
       foregroundColor: Colors.black,
       shape: RoundedRectangleBorder(
@@ -146,17 +143,17 @@ class ElevatedButtonStyle {
   }
 
   static ButtonStyle operatorStyle(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
-    final ratioh = screenHeight > 592.0 ? screenHeight / 80 : screenHeight / 60;
-    final ratiow = screenWidth > 360.0 ? screenWidth / 80 : screenWidth / 60;
+    const screenWidth = 411.42857142857144;
+    const screenHeight = 843.4285714285714;
+    const ratioh = screenHeight > 592.0 ? screenHeight / 80 : screenHeight / 60;
+    const ratiow = screenWidth > 360.0 ? screenWidth / 80 : screenWidth / 60;
 
-    final buttonWidth = screenWidth / ratiow;
-    final buttonHeight = screenHeight / ratioh;
+    const buttonWidth = screenWidth / ratiow;
+    const buttonHeight = screenHeight / ratioh;
 
     return ElevatedButton.styleFrom(
         elevation: 0,
-        minimumSize: Size(buttonWidth, buttonHeight),
+        minimumSize: const Size(buttonWidth, buttonHeight),
         backgroundColor: Colors.transparent,
         foregroundColor: Colors.black,
         shape: RoundedRectangleBorder(
@@ -165,18 +162,18 @@ class ElevatedButtonStyle {
   }
 
   static ButtonStyle scientificBtn(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
-    final ratioh = screenHeight > 592.0 ? screenHeight / 80 : screenHeight / 60;
-    final ratiow = screenWidth > 360.0 ? screenWidth / 90 : screenWidth / 70;
+    const screenWidth = 411.42857142857144;
+    const screenHeight = 843.4285714285714;
+    const ratioh = screenHeight > 592.0 ? screenHeight / 80 : screenHeight / 60;
+    const ratiow = screenWidth > 360.0 ? screenWidth / 90 : screenWidth / 70;
 
-    final buttonWidth = screenWidth / ratiow;
-    final buttonHeight = screenHeight / ratioh;
+    const buttonWidth = screenWidth / ratiow;
+    const buttonHeight = screenHeight / ratioh;
 
     return ElevatedButton.styleFrom(
       padding: const EdgeInsets.all(0),
       elevation: 0,
-      minimumSize: Size(buttonWidth, buttonHeight),
+      minimumSize: const Size(buttonWidth, buttonHeight),
       backgroundColor: const Color.fromARGB(127, 1, 5, 7),
       foregroundColor: Colors.black,
       shape: RoundedRectangleBorder(
@@ -186,18 +183,18 @@ class ElevatedButtonStyle {
   }
 
   static ButtonStyle operatorStyleEquals(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
-    final ratioh = screenHeight > 592.0 ? screenHeight / 80 : screenHeight / 60;
-    final ratiow = screenWidth > 360.0 ? screenWidth / 80 : screenWidth / 60;
+    const screenWidth = 411.42857142857144;
+    const screenHeight = 843.4285714285714;
+    const ratioh = screenHeight > 592.0 ? screenHeight / 80 : screenHeight / 60;
+    const ratiow = screenWidth > 360.0 ? screenWidth / 80 : screenWidth / 60;
 
-    final buttonWidth = screenWidth / ratiow;
-    final buttonHeight = screenHeight / ratioh;
+    const buttonWidth = screenWidth / ratiow;
+    const buttonHeight = screenHeight / ratioh;
 
     return ElevatedButton.styleFrom(
       padding: const EdgeInsets.all(0),
       elevation: 0,
-      minimumSize: Size(buttonWidth, buttonHeight),
+      minimumSize: const Size(buttonWidth, buttonHeight),
       backgroundColor: const Color.fromARGB(124, 0, 0, 0),
       foregroundColor: Colors.black,
       shape: RoundedRectangleBorder(
@@ -231,7 +228,11 @@ class mainscreen extends StatelessWidget {
                   Color(0xff153f5b),
                   Color(0xff10344b)
                 ],
-                stops: [0.33, 0.66, 1],
+                stops: [
+                  0.33,
+                  0.66,
+                  1
+                ],
                 begin: Alignment.bottomRight,
                 end: Alignment.topLeft,
               )
